@@ -145,6 +145,15 @@ section .about-self .right .social a {
   font-size: 2.5rem;
   margin-right: 0.2rem;
 }
+section .about-self .contaier .video {
+  justify-content: center;
+  align-items: conter;
+  margin-top: 20px;
+}
+section .about-self .container .videp video {
+  max-width: 100%;
+  height: auto;
+}
 section.portfolio::after {
   content: '';
   display: block;
