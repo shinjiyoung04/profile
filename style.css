@@ -1,12 +1,12 @@
-@import url(`https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Vardla+Round&display=swap`);
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Varela+Round&display=swap');
+/* header.css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 a,
-alink,
+a:link,
 a:visited {
   color: inherit;
   text-decoration: none;
@@ -18,9 +18,12 @@ li {
   width: 1140px;
   margin: 0 auto;
 }
+.container h1 button {
+  color: #5100ff;
+}
 header {
-  position: absolute;
-  color: black;
+  position: fixed;
+  color: rgb(0, 0, 0);
   top: 0;
   z-index: 1;
   width: 100%;
@@ -34,6 +37,7 @@ header .container {
 }
 header nav ul {
   display: flex;
+  color: #5100ff;
 }
 header nav ul li {
   padding: 10px;
@@ -42,6 +46,7 @@ header button {
   background: transparent;
   border: 0;
   cursor: pointer;
+  color: rgb(0, 0, 0);
 }
 header h1 button {
   font-size: 2rem;
@@ -53,7 +58,8 @@ header nav ul li button {
 main {
   width: 100%;
   height: 100vh;
-  color: whith;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -71,7 +77,7 @@ main h2 {
 main p {
   max-width: 500px;
   margin: 0 auto;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 main h2 span::after {
   content: '';
