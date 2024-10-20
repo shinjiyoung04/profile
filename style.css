@@ -94,7 +94,7 @@ main p {
 main h2 span::after {
   content: '';
   height: 40px;
-  width: 3px;
+  width: 5px;
   background-color: #000000;
   display: inline-block;
   animation: blink 0.7s ease-in-out infinite;
@@ -140,6 +140,12 @@ section .about-self .left {
 section .about-self .left img {
   max-width: 100%;
 }
+section .about-self .left video {
+  width: 100%; /* or a specific width like 300px */
+  height: auto; /* This will maintain the aspect ratio */
+  max-width: 600px; /* You can set a maximum width if needed */
+}
+
 section .about-self .right a {
   color: #5100ff;
 }
@@ -166,11 +172,13 @@ section .about-self .right .social a {
 section .about-self .contaier .video {
   justify-content: center;
   align-items: conter;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-section .about-self .container .videp video {
+
+section .about-self .container video {
   max-width: 100%;
   height: auto;
+  max-width: 1100px;
 }
 section.portfolio::after {
   content: '';
